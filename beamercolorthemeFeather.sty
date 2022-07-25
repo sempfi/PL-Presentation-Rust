@@ -1,0 +1,51 @@
+% This is the color theme file of the Feather theme.
+% Copyright (c) 2014 by Lilyana Vaskova Vankova <lilqna.v@gmail.com>
+%
+% This program is free software: you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
+%
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+%
+% You can find the GNU General Public License at <http://www.gnu.org/licenses/>.
+
+%----------------------------------------------------------------------------------------------------------------------------------
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{beamercolorthemeFeather}[2017/08/22 v1.1.0 The Feather Beamer Theme]
+
+%----------------------------------------------------------------------------------------------------------------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Theme options and definitions
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------------------------------------------------
+
+% beamer specific options
+
+\mode<presentation>
+{
+    %% defining colors 
+	\definecolor{ShirazBlue}{RGB}{22,43,58}
+	\definecolor{ShirazYellow}{RGB}{22,43,58}
+	\definecolor{Black}{RGB}{0,0,0}
+	\definecolor{White}{RGB}{255,255,255}
+	\definecolor{cadetgrey}{rgb}{0.57, 0.64, 0.69}
+	\definecolor{Rust}{RGB}{22,43,58}
+    \definecolor{beamer@barcolor}{RGB}{194,193,204}% light blue
+    \definecolor{beamer@normaltextcolor}{RGB}{84,97,110}% gray blue
+    \definecolor{beamer@headercolor}{HTML}{008080} % dark blue
+
+    %% setting the above definitions
+    \setbeamercolor{structure}{fg=Rust}
+    \setbeamercolor{normal text}{fg=Black}
+    \setbeamercolor{frametitle}{fg=white,bg=Rust}
+    \setbeamercolor{Feather}{fg=cadetgrey!50,bg=Rust}
+}
+
+\mode<all>
